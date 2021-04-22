@@ -1,0 +1,38 @@
+header{
+  font-family: 'Montserrat', sans-serif;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+      font-size: 14px;
+      text-transform: uppercase;
+      li{
+        a{
+          margin: 30px;
+          color: #212934;
+          &:hover{
+            color: #f9d03f;
+            transition: 0.2s;
+          }
+        }
+        button{
+          padding: 12px 26px;
+          background-color: #fed23f;
+          border: 0;
+          letter-spacing: 3px;
+          &:hover{
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    .logo{
+      img{
+        max-width: 190px;
+      }
+    }
+  }
+}

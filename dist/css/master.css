@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 2% 5%;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container ul {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+header .container ul li a {
+  margin: 30px;
+  color: #212934;
+}
+header .container ul li a:hover {
+  color: #f9d03f;
+  transition: 0.2s;
+}
+header .container ul li button {
+  padding: 12px 26px;
+  background-color: #fed23f;
+  border: 0;
+  letter-spacing: 3px;
+}
+header .container ul li button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s;
+}
+header .container .logo img {
+  max-width: 190px;
+}
