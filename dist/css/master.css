@@ -4,6 +4,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Raleway";
+}
+
 ul {
   list-style: none;
 }
@@ -23,7 +27,20 @@ a {
   font-family: "Raleway";
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 130px;
+  background-color: white;
   font-family: "Montserrat", sans-serif;
 }
 header .container {
@@ -37,7 +54,7 @@ header .container ul {
 }
 header .container ul li a {
   margin: 30px;
-  color: #212934;
+  color: #31312F;
 }
 header .container ul li a:hover {
   color: #f9d03f;
@@ -58,12 +75,16 @@ header .container .logo img {
   max-width: 190px;
 }
 
-.fixed {
+main {
+  position: relative;
+  top: 130px;
+}
+main .fixed {
   position: fixed;
   right: 10px;
   top: 140px;
 }
-.fixed .square {
+main .fixed .square {
   width: 70px;
   height: 70px;
   background-color: white;
@@ -74,15 +95,14 @@ header .container .logo img {
   align-items: center;
   justify-content: space-around;
 }
-.fixed .square i {
+main .fixed .square i {
   font-size: 25px;
   color: #31312F;
 }
-.fixed .square span {
+main .fixed .square span {
   font-weight: 500;
 }
-
-.jumbotron {
+main .jumbotron {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,10 +114,10 @@ header .container .logo img {
   background-size: cover;
   background-position: center center;
 }
-.jumbotron .jb-content {
+main .jumbotron .jb-content {
   text-align: center;
 }
-.jumbotron .jb-content h1 {
+main .jumbotron .jb-content h1 {
   text-transform: uppercase;
   font-size: 60px;
   font-weight: 800;
@@ -105,37 +125,83 @@ header .container .logo img {
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
-.jumbotron .jb-content h3 {
+main .jumbotron .jb-content h3 {
   margin-top: 5px;
   color: #FED03D;
   font-size: 25px;
   font-weight: 400;
 }
-.jumbotron button {
+main .jumbotron button {
   margin: 10px;
   text-transform: uppercase;
   padding: 18px 30px;
   font-size: 16px;
 }
-.jumbotron button:first-child {
+main .jumbotron button:first-child {
   color: white;
   background-color: #31312F;
   border: 0;
   letter-spacing: 3px;
 }
-.jumbotron button:first-child:hover {
+main .jumbotron button:first-child:hover {
   background-color: #f9d03f;
   color: black;
   transition: 0.3s;
 }
-.jumbotron button:last-child {
+main .jumbotron button:last-child {
   color: black;
   background-color: #f9d03f;
   border: 0;
   letter-spacing: 3px;
 }
-.jumbotron button:last-child:hover {
+main .jumbotron button:last-child:hover {
   background-color: #31312F;
   color: white;
   transition: 0.3s;
+}
+main .stripe {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9d03f;
+}
+main .stripe p {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #31312F;
+}
+main .halfway-button {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .halfway-button button {
+  text-transform: uppercase;
+  padding: 12px 26px;
+  letter-spacing: 3px;
+  background-color: #31312F;
+  color: white;
+  border-color: white;
+}
+main .halfway-button button:hover {
+  background-color: white;
+  color: #31312F;
+  transition: 0.3s;
+}
+main section p {
+  font-size: 30px;
+}
+main section .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border: 1px solid #f9d03f;
+  margin-bottom: 30px;
+}
+main section .section-text {
+  margin: 0 15%;
 }
