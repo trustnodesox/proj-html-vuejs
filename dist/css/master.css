@@ -170,6 +170,7 @@ main .stripe p {
   text-transform: capitalize;
   font-size: 30px;
   color: #31312F;
+  letter-spacing: 2px;
 }
 main .halfway-button {
   position: relative;
@@ -191,6 +192,9 @@ main .halfway-button button:hover {
   color: #31312F;
   transition: 0.3s;
 }
+main section {
+  margin-top: 40px;
+}
 main section p {
   font-size: 30px;
 }
@@ -203,5 +207,24 @@ main section .divider {
   margin-bottom: 30px;
 }
 main section .section-text {
-  margin: 0 15%;
+  margin: 0 25%;
+  font-size: 16px;
+  color: #747474;
+  line-height: 3;
+  text-align: center;
+  font-weight: 400;
+}
+main section .card-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main section .card-wrapper .card {
+  background-color: #f0ede6;
+  margin: 20px;
+}
+main section .card-wrapper .card i {
+  border: 1px solid black;
+  border-radius: 50%;
 }
