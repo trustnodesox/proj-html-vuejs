@@ -58,6 +58,30 @@ header .container .logo img {
   max-width: 190px;
 }
 
+.fixed {
+  position: fixed;
+  right: 10px;
+  top: 140px;
+}
+.fixed .square {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.fixed .square i {
+  font-size: 25px;
+  color: #31312F;
+}
+.fixed .square span {
+  font-weight: 500;
+}
+
 .jumbotron {
   display: flex;
   flex-direction: column;
