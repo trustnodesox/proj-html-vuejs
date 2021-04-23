@@ -75,7 +75,7 @@ header .container .logo img {
 }
 .jumbotron .jb-content h1 {
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 800;
   color: white;
   letter-spacing: 2px;
@@ -87,9 +87,14 @@ header .container .logo img {
   font-size: 25px;
   font-weight: 400;
 }
+.jumbotron button {
+  margin: 10px;
+  text-transform: uppercase;
+  padding: 18px 30px;
+  font-size: 16px;
+}
 .jumbotron button:first-child {
   color: white;
-  padding: 12px 26px;
   background-color: #31312F;
   border: 0;
   letter-spacing: 3px;
@@ -101,7 +106,6 @@ header .container .logo img {
 }
 .jumbotron button:last-child {
   color: black;
-  padding: 12px 26px;
   background-color: #f9d03f;
   border: 0;
   letter-spacing: 3px;

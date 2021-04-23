@@ -13,7 +13,7 @@
     text-align: center;
     h1{
       text-transform: uppercase;
-      font-size: 70px;
+      font-size: 60px;
       font-weight: 800;
       color: white;
       letter-spacing: 2px;
@@ -26,9 +26,14 @@
       font-weight: 400;
     }
   }
+  button{
+    margin: 10px;
+    text-transform: uppercase;
+    padding: 18px 30px;
+    font-size: 16px;
+  }
   button:first-child{
     color: white;
-    padding: 12px 26px;
     background-color: #31312F;
     border: 0;
     letter-spacing: 3px;
@@ -40,7 +45,6 @@
   }
   button:last-child{
     color: black;
-    padding: 12px 26px;
     background-color: #f9d03f;
     border: 0;
     letter-spacing: 3px;
