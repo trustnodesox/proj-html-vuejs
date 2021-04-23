@@ -6,40 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <img src="dist/img/construction_logo_retina.png" alt="">
-        </div>
-        <div class="navbar">
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Work</a>
-            </li>
-            <li>
-              <a href="#">Articles</a>
-            </li>
-            <li>
-              <button type="button" name="button">GET QUOTE</button>
-            </li>
-          </ul>
+      <div id="root">
+          <div class="container">
+            <div class="logo">
+              <img src="src/img/construction_logo_retina.png" alt="">
+            </div>
+            <div class="navbar">
+              <ul>
+                <li  v-for="headerLink in headerLinks">
+                  <a href="#">{{headerLink.name}}</a>
+                </li>
+                <li>
+                  <button type="button" name="button">GET QUOTE</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+    <main>
+      <div class="jumbotron">
+        <div class="jb-content main-font">
+          <h1>building inspiring spaces</h1>
+          <h3>We Build Inspiring Residential & Commercial Spaces</h3>
+            <div class="jb-btns">
+              <button type="button" name="button">explore recent work</button>
+              <button type="button" name="button">get a quote today</button>
+            </div>
         </div>
       </div>
-    </header>
-
-
-
-
+    </main>
+    </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="src/dati.js" charset="utf-8"></script>
+  <script src="dist/js/main.js" charset="utf-8"></script>
   </html>
