@@ -38,6 +38,15 @@ a {
   background-color: #f0ede6;
 }
 
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  border-top: 2px solid #f9d03f;
+  margin-bottom: 30px;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -89,6 +98,7 @@ main .fixed {
   top: 140px;
 }
 main .fixed .square {
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   width: 70px;
   height: 70px;
   background-color: white;
@@ -198,20 +208,12 @@ main .halfway-button button:hover {
 }
 main section {
   width: 100%;
-  margin-top: 40px;
+  padding-top: 40px;
 }
 main section p {
   font-size: 30px;
   letter-spacing: 2px;
   color: #31312f;
-}
-main section .divider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  border-top: 2px solid #f9d03f;
-  margin-bottom: 30px;
 }
 main section .section-text {
   margin: 0 25%;
@@ -426,4 +428,159 @@ main section .core-values .card .card-title {
   letter-spacing: 1px;
   font-size: 17px;
   color: #31312f;
+}
+main .slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-parallax-144609983.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .slider .slider-wrapper {
+  margin: 0 15%;
+  color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+main .slider .slider-wrapper h2 {
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: 450;
+}
+main .slider .slider-wrapper .slider-text {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .slider .slider-wrapper .slider-name {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+main .slider .slider-wrapper i {
+  margin: 5px;
+}
+main .slider .slider-wrapper img {
+  border-radius: 50%;
+}
+main .rounded-divider-first {
+  background-color: white;
+  width: 100%;
+  height: 450px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+main .rounded-divider-second {
+  background-color: white;
+  width: 100%;
+  height: 450px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+main #thumbnail {
+  width: 366px;
+  height: 245px;
+}
+main #thumbnail .thumbnail-text {
+  padding: 15px;
+  background-color: white;
+  margin-top: 0;
+}
+main #thumbnail .thumbnail-text p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+}
+main #thumbnail .thumbnail-text span {
+  display: block;
+  font-size: 15px;
+  color: #6b6868;
+  line-height: 2;
+}
+main #thumbnail img {
+  max-width: 100%;
+}
+main .partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .partners img {
+  margin: 40px;
+  width: 182px;
+}
+main .pre-footer {
+  color: white;
+  width: 100%;
+  height: 50vh;
+  background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/about-call-to-action-57862405.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .pre-footer .left {
+  width: 50%;
+  display: inline-block;
+}
+main .pre-footer .left p {
+  color: white !important;
+}
+main .pre-footer .left span {
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+main .pre-footer .right {
+  display: inline-block;
+}
+main .pre-footer .right button {
+  display: block;
+  padding: 12px 30px;
+  background-color: #fed23f;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+main .pre-footer .right button:hover {
+  background-color: #31312f;
+  transition: 0.5s;
+}
+main .pre-footer .right span {
+  margin-left: 60px;
+}
+
+footer {
+  width: 100%;
+  height: 80vh;
+  background-color: #31312f;
+  margin-top: 110px;
+}
+footer .flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 150px;
+}
+footer .flexbox .grey-stripe {
+  width: 100%;
+  height: 30px;
+  background-color: #6b6868;
+}
+footer .flexbox .logo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -32,3 +32,10 @@ a{
 #bg-grey{
   background-color: $bg-grey;
 }
+
+.divider{
+  @include flex-center;
+  width: 200px;
+  border-top: 2px solid $second-color;
+  margin-bottom: 30px;
+}

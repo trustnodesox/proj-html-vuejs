@@ -224,39 +224,166 @@
             </div>
           </div>
       </section>
-      <div class="rounded-board">
+      <div class="slider">
         <div class="rounded-divider-first" id="bg-grey">
 
         </div>
           <div class="container">
-            <div class="counter-wrapper">
-              <div class="counter">
-                <i class="fas fa-suitcase"></i>
-                <p>3534</p>
-                <span>planning applications</span>
+            <div v-for="(slider, i) in sliders"class="slider-wrapper" v-if="i == index">
+              <h2>Our home owners says</h2>
+              <div class="divider"></div>
+              <div class="images">
+                  <img :src="slider.immagine" alt="">
               </div>
-              <div class="counter">
-                <i class="far fa-building"></i>
-                <p>896</p>
-                <span>completed projects</span>
+              <div class="slider-text">
+                <p>{{slider.frase}}</p>
               </div>
-              <div class="counter">
-                <i class="fas fa-users"></i>
-                <p>172</p>
-                <span>trained professionals</span>
+              <div class="slider-name">
+                <p>{{slider.nome}}</p>
+
               </div>
-              <div class="counter">
-                <i class="fas fa-globe"></i>
-                <p>19</p>
-                <span>international offices</span>
-              </div>
+                <div class="nav">
+                    <i
+                        v-for="(dot, i) in 2"
+                        :class="(i == index) ? 'fas fa-circle' : 'far fa-circle' "
+                        @click="dots(dot-1)">
+                    </i>
+                </div>
             </div>
           </div>
           <div class="rounded-divider-second" id="bg-grey">
 
           </div>
       </div>
+      <section class="center" id="bg-grey">
+        <p>Latest news</p>
+        <div class="divider"></div>
+        <div class="section-text">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+        </div>
+        <div class="container">
+          <div class="img-wrapper">
+            <div class="img-card" id="thumbnail">
+              <img src="src/img/thumbnail-1.jpg" alt="">
+                <div class="img-info">
+                  <div class="img-icons">
+                    <div class="icon-bg">
+                      <i class="fas fa-link"></i>
+                    </div>
+                    <div class="icon-bg">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <p>florida healt facility</p>
+                  <span>commercial</span>
+                </div>
+                <div class="thumbnail-text">
+                  <p>Redeveloping Florida’s Remote Southern Coast</p>
+                  <small>December 7th, 2015</small>
+                  <div class="divider"></div>
+                  <span>Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</span>
+
+                </div>
+            </div>
+            <div class="img-card" id="thumbnail">
+              <img src="src/img/thumbnail-2.jpg" alt="">
+              <div class="img-info">
+                <div class="img-icons">
+                  <div class="icon-bg">
+                    <i class="fas fa-link"></i>
+                  </div>
+                  <div class="icon-bg">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <p>florida healt facility</p>
+                <span>commercial</span>
+              </div>
+              <div class="thumbnail-text">
+                <p>Redeveloping Florida’s Remote Southern Coast</p>
+                <small>December 7th, 2015</small>
+                <div class="divider"></div>
+                <span>Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</span>
+              </div>
+            </div>
+            <div class="img-card" id="thumbnail">
+              <img src="src/img/thumbnail-3.jpg" alt="">
+              <div class="img-info">
+                <div class="img-icons">
+                  <div class="icon-bg">
+                    <i class="fas fa-link"></i>
+                  </div>
+                  <div class="icon-bg">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
+                <p>florida healt facility</p>
+                <span>commercial</span>
+              </div>
+              <div class="thumbnail-text">
+                <p>Redeveloping Florida’s Remote Southern Coast</p>
+                <small>December 7th, 2015</small>
+                <div class="divider"></div>
+                <span>Technology is Here to Stay Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus purus nisl, elementum vitae consequat at, tristique ut enim. Sed ut dignissim leo. Nullam sed metus id sapien faucibus rhoncus sed</span>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <button type="button" name="button" style="margin-top: 300px;">view all projects</button>
+          </div>
+        </div>
+      </section>
+      <section class="center">
+        <p>Trusted Partners</p>
+        <div class="divider"></div>
+        <div class="section-text">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
+        </div>
+        <div class="partners">
+          <img src="src/img/partner-1.png" alt="">
+          <img src="src/img/partner-2.png" alt="">
+          <img src="src/img/partner-3.png" alt="">
+          <img src="src/img/partner-4.png" alt="">
+          <img src="src/img/partner-5.png" alt="">
+        </div>
+      </section>
+      <section class="pre-footer">
+          <div class="left">
+            <p>Building Inspiring Spaces</p>
+            <div class="divider"></div>
+            <span>Vivamus sed consectetur tellus dolor sit amet, consectetur adipiscing lorem elit sadip ipsum ets ficilis uns.</span>
+          </div>
+          <div class="right">
+            <button type="button" name="button">GET A FREE QUOTE</button>
+            <span>Only takes a few seconds!</span>
+          </div>
+      </section>
     </main>
+    <footer>
+      <div class="grey-stripe">
+
+      </div>
+      <div class="flexbox">
+      <div class="logo-ecc">
+        <img src="src/img/footer-logo.png" alt="">
+        <div class="logo-info">
+          <span>
+            We are specialists in the construction of unique and exclusive properties. Our work inspires. We pride ourselves on delivering outstanding quality and design for leading clients across the world.
+
+          </span>
+        </div>
+      </div>
+      <div class="tweets">
+        <p>latest tweets</p>
+      </div>
+      <div class="contacts">
+        <p>contact us today</p>
+      </div>
+      <div class="find-us">
+        <p>find us</p>
+      </div>
+      </div>
+    </footer>
   </div>
 
 

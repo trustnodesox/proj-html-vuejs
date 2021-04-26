@@ -7,6 +7,7 @@ main{
     right: 10px;
     top: 140px;
     .square{
+      box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
       width: 70px;
       height: 70px;
       background-color: white;
@@ -111,17 +112,11 @@ main{
   }
   section{
     width: 100%;
-    margin-top: 40px;
+    padding-top: 40px;
     p{
       font-size: 30px;
       letter-spacing: 2px;
       color: $third-color;
-    }
-    .divider{
-      @include flex-center;
-      width: 200px;
-      border-top: 2px solid $second-color;
-      margin-bottom: 30px;
     }
     .section-text{
       margin: 0 25%;
@@ -342,6 +337,156 @@ main{
           color: $third-color;
         }
       }
+    }
+  }
+  .slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    background-image: url('https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-parallax-144609983.jpg');
+    background-size: cover;
+    background-position: center;
+    .slider-wrapper{
+      margin: 0 15%;
+      h2{
+        letter-spacing: 2px;
+        font-size: 28px;
+        font-weight: 450;
+      }
+      .slider-text{
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 3px;
+        line-height: 2;
+        @include flex-center;
+        flex-direction: column;
+      }
+      .slider-name{
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 800;
+      }
+      i{
+        margin: 5px;
+      }
+      color: white;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      img{
+        border-radius: 50%;
+      }
+      }
+    }
+    .rounded-divider-first{
+      background-color: white;
+      width: 100%;
+      height: 450px;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+    }
+    .rounded-divider-second{
+      background-color: white;
+      width: 100%;
+      height: 450px;
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+    }
+    #thumbnail{
+      width: 366px;
+      height: 245px;
+      .thumbnail-text{
+        padding: 15px;
+        p{
+          margin: 0;
+          font-size: 24px;
+          line-height: 1.5;
+        }
+        span{
+          display: block;
+          font-size: 15px;
+          color: $font-color;
+          line-height: 2;
+        }
+        background-color: white;
+        margin-top: 0;
+      }
+      img{
+        max-width: 100%;
+      }
+    }
+    .partners{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      img{
+        margin: 40px;
+        width: 182px;
+      }
+    }
+    .pre-footer{
+      color: white;
+      width: 100%;
+      height: 50vh;
+      background-image: url('https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/about-call-to-action-57862405.jpg');
+      background-size: cover;
+      background-position: center;
+      @include flex-center;
+      .left{
+        width: 50%;
+        display: inline-block;
+        p{
+          color: white!important;
+        }
+        span{
+          font-size: 20px;
+          letter-spacing: 1px;
+          line-height: 2;
+        }
+      }
+      .right{
+        display: inline-block;
+        button{
+          display: block;
+          padding: 12px 30px;
+          background-color: $first-color;
+          letter-spacing: 2px;
+          margin-bottom: 15px;
+          &:hover{
+            background-color: $third-color;
+            transition: 0.5s;
+          }
+        }
+        span{
+          margin-left: 60px;
+        }
+      }
+    }
+  }
+footer{
+  width: 100%;
+  height: 80vh;
+  background-color: $third-color;
+  margin-top: 110px;
+    .flexbox{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding-top: 150px;
+    .grey-stripe{
+      width: 100%;
+      height: 30px;
+      background-color: #6b6868;
+    }
+    .logo-info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
     }
   }
 }
