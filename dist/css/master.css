@@ -34,6 +34,10 @@ a {
   flex-direction: column;
 }
 
+#bg-grey {
+  background-color: #f0ede6;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -195,8 +199,6 @@ main .halfway-button button:hover {
 main section {
   width: 100%;
   margin-top: 40px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
 }
 main section p {
   font-size: 30px;
@@ -208,7 +210,7 @@ main section .divider {
   justify-content: center;
   align-items: center;
   width: 200px;
-  border: 1px solid #f9d03f;
+  border-top: 2px solid #f9d03f;
   margin-bottom: 30px;
 }
 main section .section-text {
@@ -262,22 +264,166 @@ main .rounded-board {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 650px;
+  height: 800px;
   background-image: url("https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-244125289.jpg");
   background-size: cover;
   background-position: center;
 }
+main .rounded-board .counter-wrapper {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .rounded-board .counter-wrapper .counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main .rounded-board .counter-wrapper .counter p, main .rounded-board .counter-wrapper .counter i {
+  margin: 0;
+  font-size: 68px;
+  color: #eeeeee;
+}
+main .rounded-board .counter-wrapper .counter span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #eeeeee;
+  font-weight: 600;
+  margin-top: 10px;
+}
 main .rounded-board .rounded-divider-first {
   background-color: white;
   width: 100%;
-  height: 220px;
+  height: 450px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 main .rounded-board .rounded-divider-second {
   background-color: white;
   width: 100%;
-  height: 220px;
+  height: 450px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+}
+main section .img-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main section .img-wrapper img {
+  height: 100%;
+}
+main section .img-wrapper .img-card {
+  margin: 20px;
+  position: relative;
+  height: 354px;
+  width: 354px;
+}
+main section .img-wrapper .img-card .img-info {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 0;
+  background-color: #fed23f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .img-wrapper .img-card .img-info p {
+  font-size: 15px;
+  color: white;
+}
+main section .img-wrapper .img-card .img-info span {
+  font-size: 12px;
+  color: white;
+}
+main section .img-wrapper .img-card .img-info .img-icons {
+  display: flex;
+}
+main section .img-wrapper .img-card .img-info .img-icons .icon-bg {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #f0ede6;
+}
+main section .img-wrapper .img-card .img-info .img-icons .icon-bg i {
+  font-size: 20px;
+  color: #f0e23d;
+}
+main section .img-wrapper .img-card .img-info:hover {
+  cursor: pointer;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+main section button {
+  margin: 50px;
+  text-transform: uppercase;
+  background-color: white;
+  letter-spacing: 2px;
+  padding: 12px 80px;
+  border: 0;
+}
+main section button:hover {
+  transition: 0.5s;
+  background-color: #fed23f;
+}
+main section .core-values .icon-bg-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+main section .core-values .icon-bg-2#home {
+  background-color: #8faeb8;
+}
+main section .core-values .icon-bg-2#home:hover {
+  background-color: #fed23f;
+  transition: 0.5s;
+}
+main section .core-values .icon-bg-2#sun {
+  background-color: #6586b1;
+}
+main section .core-values .icon-bg-2#sun:hover {
+  background-color: #fed23f;
+  transition: 0.5s;
+}
+main section .core-values .icon-bg-2#users {
+  background-color: #fe6f1d;
+}
+main section .core-values .icon-bg-2#users:hover {
+  background-color: #fed23f;
+  transition: 0.5s;
+}
+main section .core-values .icon-bg-2#lightbulb {
+  background-color: #7e6b12;
+}
+main section .core-values .icon-bg-2#lightbulb:hover {
+  background-color: #fed23f;
+  transition: 0.5s;
+}
+main section .core-values .icon-bg-2 i {
+  color: white;
+  font-size: 60px;
+  border: 0;
+}
+main section .core-values .card .divider-grey {
+  width: 20px;
+  border-top: 2px solid #8f8f8f;
+}
+main section .core-values .card .card-title {
+  letter-spacing: 1px;
+  font-size: 17px;
+  color: #31312f;
 }

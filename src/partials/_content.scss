@@ -112,8 +112,6 @@ main{
   section{
     width: 100%;
     margin-top: 40px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
     p{
       font-size: 30px;
       letter-spacing: 2px;
@@ -122,7 +120,7 @@ main{
     .divider{
       @include flex-center;
       width: 200px;
-      border: 1px solid $second-color;
+      border-top: 2px solid $second-color;
       margin-bottom: 30px;
     }
     .section-text{
@@ -174,24 +172,176 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
+    height: 800px;
+    background-image: url('https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-244125289.jpg');
+    background-size: cover;
+    background-position: center;
+    .counter-wrapper{
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .counter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        p, i{
+          margin: 0;
+          font-size: 68px;
+          color: #eeeeee;
+        }
+        span{
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $counter-color;
+          font-weight: 600;
+          margin-top: 10px;
+        }
+      }
+    }
     .rounded-divider-first{
       background-color: white;
       width: 100%;
-      height: 220px;
+      height: 450px;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
     }
     .rounded-divider-second{
       background-color: white;
       width: 100%;
-      height: 220px;
+      height: 450px;
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
     }
-    width: 100%;
-    height: 650px;
-    background-image: url('https://avada.theme-fusion.com/construction/wp-content/uploads/sites/55/2015/12/home-244125289.jpg');
-    background-size: cover;
-    background-position: center;
+  }
+  section{
+    .img-wrapper{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      img{
+        height: 100%;
+      }
+      .img-card{
+        margin: 20px;
+        position: relative;
+        height: 354px;
+        width: 354px;
+        .img-info{
+          p{
+            font-size: 15px;
+            color: white;
+          }
+          span{
+            font-size: 12px;
+            color: white;
+          }
+          .img-icons{
+            display: flex;
+            .icon-bg{
+              margin-left: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 60px;
+              width: 60px;
+              border-radius: 50%;
+              background-color: #f0ede6;
+              i{
+                font-size: 20px;
+                color: #f0e23d;
+              }
+            }
+          }
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.5s;
+          position: absolute;
+          top: 0;
+          background-color: $first-color;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          &:hover{
+            cursor: pointer;
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    button{
+      margin: 50px;
+      text-transform: uppercase;
+      background-color: white;
+      letter-spacing: 2px;
+      padding: 12px 80px;
+      border: 0;
+      &:hover{
+        transition: 0.5s;
+        background-color: $first-color;
+      }
+    }
+  }
+  section{
+    .core-values{
+      .icon-bg-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        &#home{
+          background-color: #8faeb8;
+          &:hover{
+            background-color: $first-color;
+            transition: 0.5s;
+          }
+        }
+        &#sun{
+          background-color: #6586b1;
+          &:hover{
+            background-color: $first-color;
+            transition: 0.5s;
+          }
+        }
+        &#users{
+          background-color: #fe6f1d;
+          &:hover{
+            background-color: $first-color;
+            transition: 0.5s;
+          }
+        }
+        &#lightbulb{
+          background-color: #7e6b12;
+          &:hover{
+            background-color: $first-color;
+            transition: 0.5s;
+          }
+        }
+        i{
+          color: white;
+          font-size: 60px;
+          border: 0;
+      }
+    }
+      .card{
+        .divider-grey{
+          width: 20px;
+          border-top: 2px solid #8f8f8f;
+        }
+        .card-title{
+          letter-spacing: 1px;
+          font-size: 17px;
+          color: $third-color;
+        }
+      }
+    }
   }
 }
